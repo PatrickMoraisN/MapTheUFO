@@ -11,6 +11,8 @@
     "test:watch": "npm test --watch"
   },
   "dependencies": {
+    "@styled-icons/boxicons-solid": "^10.38.0",
+    "@styled-icons/evaicons-solid": "^10.34.0",
     "@types/leaflet": "^1.7.5",
     "leaflet": "^1.7.1",
     "next": "12.0.1",

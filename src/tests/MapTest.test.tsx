@@ -3,7 +3,7 @@ import Map from '../components/Map';
 
 describe('<Map />', () => {
   it('should render without any marker', () => {
-    render(<Map />);
+    render(<Map places={[]} />);
 
     expect(
       screen.getByRole('link', {
