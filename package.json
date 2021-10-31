@@ -14,6 +14,8 @@
     "@styled-icons/boxicons-solid": "^10.38.0",
     "@styled-icons/evaicons-solid": "^10.34.0",
     "@types/leaflet": "^1.7.5",
+    "graphql": "^16.0.0",
+    "graphql-request": "^3.6.1",
     "leaflet": "^1.7.1",
     "next": "12.0.1",
     "react": "17.0.2",
