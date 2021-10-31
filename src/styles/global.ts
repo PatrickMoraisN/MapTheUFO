@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
     background: #0F2027;
     font-size: 1.2rem;
     height: 100vh;
+    font-family: Roboto;
     color: #eeeeee;
   }
 
