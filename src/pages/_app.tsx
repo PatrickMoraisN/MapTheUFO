@@ -9,8 +9,8 @@ function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Boilerplate</title>
       </Head>
-      <GlobalStyles />
       <Component {...pageProps} />
+      <GlobalStyles />
     </>
   );
 }
