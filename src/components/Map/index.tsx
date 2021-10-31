@@ -1,6 +1,20 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 
-const Map = () => {
+interface PlaceProps {
+  id: string;
+  name: string;
+  slug: string;
+  location: {
+    latitude: number;
+    longitude: number;
+  };
+}
+
+export type MapProps = {
+  places: PlaceProps[];
+};
+
+const Map = ({ places }: MapProps) => {
   return (
     <MapContainer
       center={[51.505, -0.09]}
@@ -11,11 +25,17 @@ const Map = () => {
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[51.505, -0.09]}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
-      </Marker>
+      {places?.map(({ id, name, location }) => {
+        const { latitude, longitude } = location;
+
+        return (
+          <Marker
+            key={`place-${id}`}
+            position={[latitude, longitude]}
+            title={name}
+          />
+        );
+      })}
     </MapContainer>
   );
 };

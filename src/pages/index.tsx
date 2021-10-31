@@ -9,7 +9,19 @@ export default function Home() {
     <>
       <Main />
       <S.MapContainer>
-        <Map />
+        <Map
+          places={[
+            {
+              id: '1',
+              name: 'petropolis',
+              slug: 'petropolis',
+              location: {
+                latitude: 0,
+                longitude: 0
+              }
+            }
+          ]}
+        />
       </S.MapContainer>
     </>
   );
