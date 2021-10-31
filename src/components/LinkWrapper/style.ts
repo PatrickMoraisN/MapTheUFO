@@ -8,12 +8,12 @@ export const Wrapper = styled.div`
   color: white;
   cursor: pointer;
 
-  svg {
-    transition: 0.3s;
+  & > span {
+    margin-right: 8px;
   }
 
-  span {
-    margin-right: 8px;
+  svg {
+    transition: 0.3s;
   }
 
   &:hover {

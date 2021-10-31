@@ -10,8 +10,8 @@ export default function Main() {
       <h1>
         MapTheUFO <GiUfo />
       </h1>
-      <LinkWrapper href="/about" textLabel="About">
-        <InfoSquare size={52} aria-label="About" />
+      <LinkWrapper href="/about" textLabel="Sobre">
+        <InfoSquare size={52} aria-label="Sobre" />
       </LinkWrapper>
     </S.Header>
   );
