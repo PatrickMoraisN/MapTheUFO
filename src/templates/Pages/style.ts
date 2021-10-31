@@ -17,3 +17,8 @@ export const Heading = styled.header`
     justify-content: center;
   }
 `;
+
+export const Body = styled.p`
+  font-size: 1.8rem;
+  color: #eeeeee;
+`;

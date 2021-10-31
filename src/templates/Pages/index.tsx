@@ -3,7 +3,12 @@ import { CloseSquare } from '@styled-icons/evaicons-solid/CloseSquare';
 import LinkWrapper from '../../components/LinkWrapper';
 import * as S from './style';
 
-function AboutTemplate() {
+export type PageTemplateProps = {
+  heading: string;
+  body: string;
+};
+
+function PagesTemplate({ heading, body }: PageTemplateProps) {
   return (
     <>
       <S.Content>
@@ -12,10 +17,13 @@ function AboutTemplate() {
         </LinkWrapper>
       </S.Content>
       <S.Heading>
-        <h1>Sobre</h1>
+        <h1>{heading}</h1>
       </S.Heading>
+      <S.Body>
+        <div dangerouslySetInnerHTML={{ __html: body }} />
+      </S.Body>
     </>
   );
 }
 
-export default AboutTemplate;
+export default PagesTemplate;
