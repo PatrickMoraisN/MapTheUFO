@@ -20,11 +20,11 @@ export const Header = styled.header`
 `;
 
 export const Section = styled.section`
-  padding: 7rem 20rem;
+  padding: 3rem 20rem;
 
   h1 {
     font-size: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   p {
