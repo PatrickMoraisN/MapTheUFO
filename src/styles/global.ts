@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    color: black;
+    color: #eeeeee;
     font-weight: 600;
   }
 `;
