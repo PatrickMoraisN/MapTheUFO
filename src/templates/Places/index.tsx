@@ -27,9 +27,11 @@ export default function PlaceTemplate({ place }: PlaceTemplateProps) {
       </S.Header>
       <S.Section dangerouslySetInnerHTML={{ __html: place.description.html }} />
 
-      {place.gallery.map((image: imageProps) => (
-        <img src={image.url} alt={place.name} key={place.name} />
-      ))}
+      <S.Gallery>
+        {place.gallery.map((image: imageProps) => (
+          <img src={image.url} alt={place.name} key={place.name} />
+        ))}
+      </S.Gallery>
     </>
   );
 }

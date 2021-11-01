@@ -33,3 +33,10 @@ export const Section = styled.section`
     margin-bottom: 2rem;
   }
 `;
+
+export const Gallery = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 17rem 17rem;
+`;
