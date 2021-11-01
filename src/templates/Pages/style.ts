@@ -15,10 +15,14 @@ export const Heading = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: capitalize;
   }
 `;
 
 export const Body = styled.p`
-  font-size: 1.8rem;
-  color: #eeeeee;
+  div p {
+    font-size: 1.3rem;
+    color: #eeeeee;
+    padding: 0 20rem;
+  }
 `;

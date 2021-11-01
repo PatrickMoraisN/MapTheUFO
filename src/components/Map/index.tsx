@@ -17,7 +17,7 @@ export type MapProps = {
 const Map = ({ places }: MapProps) => {
   return (
     <MapContainer
-      center={[51.505, -0.09]}
+      center={[-15.7801, -47.5604]}
       zoom={3}
       style={{ height: '90%', width: '70%', borderRadius: '8px' }}
     >
