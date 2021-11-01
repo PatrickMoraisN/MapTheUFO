@@ -1,3 +1,7 @@
+import { CloseSquare } from '@styled-icons/evaicons-solid';
+import LinkWrapper from '../../components/LinkWrapper';
+import * as S from './style';
+
 type imageProps = {
   url: string;
   width: number;
@@ -15,8 +19,13 @@ export type PlaceTemplateProps = {
 export default function PlaceTemplate({ place }: PlaceTemplateProps) {
   return (
     <>
-      <h1>{place.name}</h1>
-      <div dangerouslySetInnerHTML={{ __html: place.description.html }} />
+      <S.Header>
+        <h1>{place.name}</h1>
+        <LinkWrapper href="/" textLabel="Fechar">
+          <CloseSquare size={52} aria-label="Fechar" />
+        </LinkWrapper>
+      </S.Header>
+      <S.Section dangerouslySetInnerHTML={{ __html: place.description.html }} />
 
       {place.gallery.map((image: imageProps) => (
         <img src={image.url} alt={place.name} key={place.name} />

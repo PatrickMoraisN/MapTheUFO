@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next';
+
 import { useRouter } from 'next/dist/client/router';
 import client from '../../graphql/client';
 import {
