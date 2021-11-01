@@ -36,6 +36,8 @@ Os Pings no mapa são gerados de forma dinâmica através do GraphCMS sendo inte
 As rotas dos pings também são geradas de forma dinâmica através do GraphCMS, sendo um slug único (Nome da localidade) usado para criar de fato a rota.
 
 O ambiente para utilizar Jest foi desenvolvido mas apenas alguns pequenos testes foram feitos utilizando a React Testing Library :)
+
+Veja o projeto **Online** em: [MapTheUFO](https://map-the-ufo.vercel.app/)
 <br />
 
 ---
@@ -101,8 +103,6 @@ npm run dev
 ```
 
 Ta tudo pronto! Abra em [localhost:3000](http://localhost:3000/) para ver o app!
-
-Veja **Online** em: [MapTheUFO](https://map-the-ufo.vercel.app/)
 
 ---
 
