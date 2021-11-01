@@ -36,6 +36,7 @@ export default function PlaceTemplate({ place }: PlaceTemplateProps) {
             key={place.name}
             width={500}
             height={800}
+            quality={75}
           />
         ))}
       </S.Gallery>
