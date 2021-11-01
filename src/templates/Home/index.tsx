@@ -9,6 +9,7 @@ export default function HomeTemplate({ places }: MapProps) {
   return (
     <>
       <Main />
+      <S.P>Clique em um dos Pings para saber um pouco de cada caso!</S.P>
       <S.MapContainer>
         <Map places={places} />
       </S.MapContainer>

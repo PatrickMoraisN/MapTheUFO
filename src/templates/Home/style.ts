@@ -11,3 +11,8 @@ export const MapContainer = styled.div`
     height: 20rem;
   }
 `;
+
+export const P = styled.p`
+  text-align: center;
+  font-size: 1.3rem;
+`;
