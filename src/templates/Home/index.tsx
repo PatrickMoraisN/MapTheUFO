@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 import Main from '../../components/Main';
 import { MapProps } from '../../components/Map';
-import * as S from '../../pages/style';
+import * as S from './style';
 
 const Map = dynamic(() => import('../../components/Map'), { ssr: false });
 
