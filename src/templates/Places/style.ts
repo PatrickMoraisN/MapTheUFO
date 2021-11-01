@@ -28,6 +28,8 @@ export const Section = styled.section`
   }
 
   p {
+    font-size: 1.5rem;
     line-height: 3rem;
+    margin-bottom: 2rem;
   }
 `;
