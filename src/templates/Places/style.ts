@@ -35,8 +35,14 @@ export const Section = styled.section`
 `;
 
 export const Gallery = styled.div`
+  img {
+    & + img {
+      margin-bottom: 4rem;
+    }
+  }
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 17rem 17rem;
+  padding: 0 17rem;
 `;

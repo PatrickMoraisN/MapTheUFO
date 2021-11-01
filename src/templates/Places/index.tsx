@@ -1,4 +1,5 @@
 import { CloseSquare } from '@styled-icons/evaicons-solid';
+import Image from 'next/image';
 import LinkWrapper from '../../components/LinkWrapper';
 import * as S from './style';
 
@@ -29,7 +30,13 @@ export default function PlaceTemplate({ place }: PlaceTemplateProps) {
 
       <S.Gallery>
         {place.gallery.map((image: imageProps) => (
-          <img src={image.url} alt={place.name} key={place.name} />
+          <Image
+            src={image.url}
+            alt={place.name}
+            key={place.name}
+            width={500}
+            height={800}
+          />
         ))}
       </S.Gallery>
     </>
