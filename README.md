@@ -102,6 +102,8 @@ npm run dev
 
 Ta tudo pronto! Abra em [localhost:3000](http://localhost:3000/) para ver o app!
 
+Veja **Online** em: [MapTheUFO](https://map-the-ufo.vercel.app/)
+
 ---
 
 # :closed_book: Autor
